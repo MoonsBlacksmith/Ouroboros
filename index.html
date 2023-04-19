@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ouroboros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <dialog id="Zap">
+        <a href="https://chat.whatsapp.com/KpyUg1FA7DW9ORPbkVGDyw" target="_blank">
+            <img id="QRCode" src="Qrcode-2.png" alt="QrCode">
+        </a>
+    </dialog>
+    <dialog class="CardModal" id="DeathModal">
+        <div class="DivModal">
+            <img src="Death.png" alt="Death" height="400" width="229">
+            <div>
+                <h2>A Morte</h2>
+                <p>A Morte é relacionada principalmente a fim de ciclos, também podendo ser relacionada a mudanças e transformações. <strike>Sendo assim não é necessário se preocupar com a morte literal, é apenas uma representação simbólica da carta</strike>.</p>
+                <button id="DeathOk">Ok</button>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="CardModal" id="TowerModal">
+        <div class="DivModal">
+            <img src="Tower.png" alt="Tower" height="400" width="229">
+            <div>
+                <h2>A Torre</h2>
+                <p>A Torre é relacionada principalmente a mudanças bruscas, geralmente essa mudança significa desestabilização, destruição e caos. Tenha cuidado em seus próximos passos e decisões, eles podem alterar massivamente a sua vida e a vida daqueles ao seu redor.</p>
+                <button id="TowerOk">Ok</button>
+            </div>
+        </div>
+    </dialog>
+    <dialog class="CardModal" id="JudgementModal">
+        <div class="DivModal">
+            <img src="Judgement.png" alt="Judgement" height="400" width="229">
+            <div>
+                <h2>O Julgamento</h2>
+                <p>O Julgamento é relacionado principalmente a renovação, no entanto também pode significar ciclo vicioso. Faça uma reflexão sobre si mesmo e sobre como você tem tomado suas decisões, elas levam ao mesmo fim? Se sim está na hora de renascer.</p>
+                <button id="JudgementOk">Ok</button>
+            </div>
+        </div>
+    </dialog>
+    <div class="container">
+        <article class="card" id="Tower">
+            <div class="flip">
+                <section class="back">
+                    <img src="Ouroboros.png" alt="back" height="400px" width="229px">
+                </section>
+                <section class="front">
+                    <img src="Tower.png" alt="front" height="400px" width="229px">
+                </section>
+            </div>
+        </article>
+        <article class="card" id="Judgement">
+            <div class="flip">
+                <section class="back">
+                    <img src="Ouroboros.png" alt="back" height="400px" width="229px">
+                </section>
+                <section class="front">
+                    <img src="Judgement.png" alt="front" height="400px" width="229px">
+                </section>
+            </div>
+        </article>
+        <article class="card" id="Death">
+            <div class="flip">
+                <section class="back">
+                    <img src="Ouroboros.png" alt="back" height="400px" width="229px">
+                </section>
+                <section class="front">
+                    <img src="Death.png" alt="front" height="400px" width="229px">
+                </section>
+            </div>
+        </article>
+    </div>
+    <button id="Aceitar">Aceitar Destino</button>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color: #161625;
+}
+
+.container{
+    padding: 5vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    height: 400px;
+    width: 229px;
+    perspective: 2000px;
+}
+
+.card .flip{
+    transition: transform .9s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .flip{
+    transform: rotateY(180deg);
+    cursor: pointer;
+}
+
+.front, .back{
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.front{
+    transform: rotateY(180deg);
+}
+
+button{
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    background-color: black;
+    height: 50px;
+    min-width: 70px;
+    width: auto;
+    border: 0px;
+    border-radius: 15px;
+    font-size: 16pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+dialog#Zap{
+    padding: 24px;
+    margin: auto;
+    background-color: #161625;
+    height: 300px;
+    width: 300px;
+    border: 0px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .5);
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.CardModal{
+    margin: auto;
+    word-break: break-word;
+    background-color: #161625;
+    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, .5);
+    border: 0px;
+    color: white;
+    border-radius: 15px;
+    max-width: 70ch;
+}
+
+.DivModal{
+    display: flex;
+}
+
+.DivModal h2,p{
+    margin: 15px;
+}
+
+.DivModal button{
+    position: relative;
+    right: auto;
+    left: auto;
+    top: 90px;
+}
+
+@media screen and (max-width: 500px){
+    .DivModal{
+        display: flex;
+        flex-direction: column;
+    }
+    .DivModal img{
+        margin: auto;
+        margin-top: 15px;
+    }
+    .DivModal button{
+        top: auto;
+        bottom: auto;
+        margin-bottom: 15px;
+    }
+    #Aceitar{
+        margin-bottom: 15px;
+    }
+}
